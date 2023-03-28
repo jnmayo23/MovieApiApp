@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/shareFragment"
+            android:icon="@android:drawable/ic_menu_share"
+            android:title="Share" />
+
+        <item
+            android:id="@+id/settingsFragment"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Support">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/helpFragment"
+                    android:icon="@android:drawable/ic_menu_help"
+                    android:title="Help" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

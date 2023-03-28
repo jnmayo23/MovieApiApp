@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/movieListFragment">
+
+    <fragment
+        android:id="@+id/movieListFragment"
+        android:name="edu.quinnipiac.movieapiapp.MovieListFragment"
+        android:label="Movie List"
+        tools:layout="@layout/fragment_movie_list" />
+
+    <fragment
+        android:id="@+id/shareFragment"
+        android:name="edu.quinnipiac.movieapiapp.ShareFragment"
+        android:label="Share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="edu.quinnipiac.movieapiapp.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="edu.quinnipiac.movieapiapp.HelpFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" />
+
+</navigation>
