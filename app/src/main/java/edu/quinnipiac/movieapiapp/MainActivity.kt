@@ -1,5 +1,6 @@
 package edu.quinnipiac.movieapiapp
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.drawerlayout.widget.DrawerLayout
@@ -22,12 +23,15 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
-        val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
         val builder = AppBarConfiguration.Builder(navController.graph)
-        builder.setOpenableLayout(drawer)
+        builder.setOpenableLayout(binding.drawerLayout)
         val appBarConfiguration = builder.build()
         binding.toolbar.setupWithNavController(navController, appBarConfiguration)
         NavigationUI.setupWithNavController(binding.navView, navController)
+    }
+
+    fun changeBackgroundColor(color: Int) {
+        binding.drawerLayout.setBackgroundColor(color)
     }
 
 }
