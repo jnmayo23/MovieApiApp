@@ -29,5 +29,14 @@
         android:name="edu.quinnipiac.movieapiapp.HelpFragment"
         android:label="Help"
         tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="edu.quinnipiac.movieapiapp.MovieDetailsFragment"
+        android:label="fragment_movie_details"
+        tools:layout="@layout/fragment_movie_details" >
+        <argument
+            android:name="movie_id"
+            app:argType="integer" />
+    </fragment>
 
 </navigation>
